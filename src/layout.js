@@ -1,0 +1,31 @@
+import React from "react"
+import PropTypes from "prop-types"
+
+import Header from "./header"
+import Footer from "./footer"
+import "./layout.css"
+
+const Layout = (props) => {
+
+  return (
+    <>
+      <Header siteTitle={props.title} />
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `0 1.0875rem 1.45rem`,
+        }}
+      >
+        <main>{props.children}</main>
+        <Footer />
+      </div>
+    </>
+  )
+}
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
+export default Layout
