@@ -49,5 +49,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "reactstrap": "^8.5.1"
+  }
 }
